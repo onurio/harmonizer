@@ -17,10 +17,19 @@
                      </rdf:Bag>
                   </ablFR:colors>
                </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <ablFR:filePath>midiSend.amxd</ablFR:filePath>
+                  <ablFR:colors>
+                     <rdf:Bag>
+                        <rdf:li>1</rdf:li>
+                     </rdf:Bag>
+                  </ablFR:colors>
+               </rdf:li>
             </rdf:Bag>
          </ablFR:items>
-         <xmp:CreatorTool>Ableton Index 10.1.42</xmp:CreatorTool>
+         <xmp:CreatorTool>Updated by Ableton Index 10.1.43</xmp:CreatorTool>
          <xmp:CreateDate>2022-03-24T21:09:19-05:00</xmp:CreateDate>
+         <xmp:MetadataDate>2022-09-27T19:59:03-05:00</xmp:MetadataDate>
       </rdf:Description>
    </rdf:RDF>
 </x:xmpmeta>
