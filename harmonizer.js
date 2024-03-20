@@ -59,7 +59,8 @@ Max.addHandler("mode", (type) => {
 });
 
 Max.addHandler("note-in", (pitch) => {
-	if (mode === "MIDI") {
+	if(pitch<0) return;
+	if (mode === "MIDI") {	
 		midiHarmonize(pitch);
 	} else {
 		autoHarmonize(pitch);
@@ -113,14 +114,8 @@ const midiHarmonize = (pitch) => {
 
 const outputHarmony = () => {
 	var first = voices[0];
-
-	var arr = voices.map(function (v) {
-		if (v === null) {
-			return 0;
-		} else {
-			return v - first;
-		}
-	});
+	var arrangedVoices = [first,...[...voices].splice(1).sort()];
+	var arr = arrangedVoices.map(v=>v==null?0:v-first);
 	outputNotes(arr);
 };
 
